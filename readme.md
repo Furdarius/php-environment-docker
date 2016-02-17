@@ -9,3 +9,13 @@ All processes execute in Docker containers, so your system will not be littered.
 * Open folder: `cd php-env-installation`
 * Permissions: `chmod 0774 init.sh`
 * Start it: `./init.sh`
+
+### What will i get?
+
+Isolated in docker containers environment for building php-project with fully configured cache for package managers
+
+Commands you'll be availble to use:
+
+* composer (install, update, etc..)
+* npm (install, update, etc..)
+* gulp
