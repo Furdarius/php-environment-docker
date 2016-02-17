@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-docker run -v $(pwd):/app composer/composer $1
+if [ ! -d ~/.composer ]; then
+	mkdir ~/.composer
+	echo "Directory \"~/.composer\" created. (Cached files will be stored there)"
+fi
+
+docker run --rm -v $(pwd):/app -v ~/.composer:/composer-data -e "COMPOSER_HOME=/composer-data" composer/composer $1
