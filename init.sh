@@ -16,7 +16,7 @@ if [ ! -d ~/bin ]; then
 	mkdir ~/bin
 fi
 
-resources=( 'composer/composer;composer' 'furdarius/npm-hard-docker;npm' 'furdarius/gulp-docker;gulp' )
+resources=( 'composer/composer;composer' 'furdarius/npm-hard-docker;npm' 'furdarius/gulp-docker;gulp' 'furdarius/webpack-docker;webpack' )
 
 for i in "${resources[@]}"
 do
@@ -43,7 +43,7 @@ do
 		fi
 
 		cp scripts/${cmd} ~/bin/${cmd}
-		chmod 0774 ~/bin/${cmd}
+		sudo chmod a+x ~/bin/${cmd}
 		echo "${cyan}\"~/bin/${cmd}\" created${reset}"
 done
 
