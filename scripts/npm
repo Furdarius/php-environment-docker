@@ -5,4 +5,4 @@ if [ ! -d ~/.npm ]; then
 	echo "Directory \"~/.npm\" created. (Cached files will be stored there)"
 fi
 
-docker run --rm -u $(id -u) -it -v $(pwd):/app -v ~/.npm:/npm-data -e "NPM_CONFIG_CACHE=/npm-data" furdarius/npm-hard-docker npm $@
+docker run --rm -u $(id -u) -it -v $(pwd):/app -v ~/.npm:/npm-data -e "NPM_CONFIG_CACHE=/npm-data" furdarius/npm-hard-docker $@
