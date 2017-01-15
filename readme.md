@@ -1,6 +1,12 @@
-This script create useful aliases for php/js development tools (Composer, npm, gulp).
+This script create useful aliases for php/js development tools. You'll get environment for building PHP projects, isolated in docker containers, so your system will not be littered. You don't need to have PHP or NodeJS on your host machine for running `composer`, and `npm`. Caching fully supported.
 
-All processes execute in Docker containers, so your system will not be littered. 
+Availible tools:
+
+* composer
+* npm
+* gulp
+* bower
+* webpack
 
 ### Installation
 
@@ -9,13 +15,4 @@ All processes execute in Docker containers, so your system will not be littered.
 * Open folder: `cd php-env-installation`
 * Permissions: `chmod 0774 init.sh`
 * Start it: `./init.sh`
-
-### What will i get?
-
-Isolated in docker containers environment for building php-project with fully configured cache for package managers
-
-Commands you'll be availble to use:
-
-* composer (install, update, etc..)
-* npm (install, update, etc..)
-* gulp
+* User dockerized php environment with composer, npm, gulp, bower and webpack
