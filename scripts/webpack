@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-docker run --rm --net=host -u $(id -u) -it -v $(pwd):/app furdarius/webpack-docker $@
+
+docker run --rm --net=host -it -v $(pwd):/app furdarius/webpack-docker $@

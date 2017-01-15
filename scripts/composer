@@ -5,4 +5,4 @@ if [ ! -d ~/.composer ]; then
 	echo "Directory \"~/.composer\" created. (Cached files will be stored there)"
 fi
 
-docker run --rm --net=host -u $(id -u) -it -v $(pwd):/app -v ~/.composer:/composer composer/composer $@
+docker run --rm --net=host -it -v $(pwd):/app -v ~/.composer:/composer -v ~/.ssh:/root/.ssh composer/composer $@
