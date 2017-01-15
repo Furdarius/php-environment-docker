@@ -2,11 +2,11 @@ This script create useful aliases for php/js development tools. You'll get envir
 
 Availible tools:
 
-* composer
-* npm
-* gulp
-* bower
-* webpack
+* `composer`
+* `npm`
+* `gulp`
+* `bower`
+* `webpack`
 
 ### Installation
 
