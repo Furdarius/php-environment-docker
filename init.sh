@@ -16,7 +16,7 @@ if [ ! -d ~/bin ]; then
 	mkdir ~/bin
 fi
 
-resources=( 'composer/composer;composer' 'furdarius/npm-hard-docker;npm' 'furdarius/gulp-docker;gulp' 'furdarius/webpack-docker;webpack' 'furdarius/bower-docker;bower')
+resources=( 'composer;composer' 'furdarius/npm-hard-docker;npm' 'furdarius/gulp-docker;gulp' 'furdarius/webpack-docker;webpack' 'furdarius/bower-docker;bower')
 
 for i in "${resources[@]}"
 do
